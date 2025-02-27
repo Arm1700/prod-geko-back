@@ -12,7 +12,7 @@ router.register(r'popular_courses',
 router.register(r'lesson_info', LessonInfoViewSet, basename='lessoninfo')
 router.register(r'reviews', ReviewViewSet, basename='review')
 router.register(r'events', EventViewSet, basename='event')
-router.register(r'team', TeamViewSet, basename='team')
+router.register(r'teams', TeamViewSet, basename='team')
 urlpatterns = [
     path('', include(router.urls)),
     path('courses/<int:category_id>/', courses_by_category, name='courses_by_category'),
