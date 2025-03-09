@@ -18,7 +18,5 @@ urlpatterns = [
     path('courses/<int:category_id>/', courses_by_category, name='courses_by_category'),
     path('events/<int:events_id>/', events_one, name='events_one'),
     path('update-order/', update_category_order, name='update-order'),
-    # path('reset-database/',
-    #      views.reset_database, name='reset_database'),
     path('contact/', views.ContactFormView.as_view(), name='contact_form'),
 ]
